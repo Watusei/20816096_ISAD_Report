@@ -77,7 +77,7 @@ public class FirstModuleUpdated
     /**
      * Converts String to upper case or lower case
      */
-    public static void convertStringCase(String converted)
+    public static String convertStringCase(String converted)
     {
         String[] caseArray;
         StringBuilder stringBuild = new StringBuilder();
@@ -85,18 +85,20 @@ public class FirstModuleUpdated
         caseArray = converted.split("(?!^)");
         for(int i = 0; i < caseArray.length; i++)
         {
-            if(caseArray[i].equals(caseArray[i].toLowerCase()))
+            if(caseArray[i].equals(caseArray[i].toLowerCase())) // Check for lower-case characters
             {
                 stringBuild.append(caseArray[i].toUpperCase());
             }
-            else if(caseArray[i].equals(caseArray[i].toUpperCase()))
+            else if(caseArray[i].equals(caseArray[i].toUpperCase())) // Check for upper-case characters
             {
-                stringBuild.append(caseArray[i].toLowerCase());
+                stringBuild.append(caseArray[i].toLowerCase()); 
             }
-            else
+            else // Check for other characters
             {
                 stringBuild.append(caseArray[i]);
             }
         }
+	converted = stringBuild.toString();
+	return converted;
     }
 }
