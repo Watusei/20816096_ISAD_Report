@@ -75,7 +75,7 @@ public class UpdateSecondModule
     }
 
     /**
-     * Converts String to upper case or lower case
+     * 1a. Converts String to upper case or lower case
      */
     public static String convertStringCase(String converted)
     {
@@ -102,23 +102,19 @@ public class UpdateSecondModule
     }
     
     /**
-     * Identifies whether there are any numbers in a String
+     * 1b. Identifies whether there are any numbers in a String
      */
-    public static boolean findNumberInString(String sentence)
+    public static boolean isNumberInString(String sentence)
     {
-        boolean num = true;
+        boolean num = false;
         String[] stringArray; 
         stringArray = sentence.split("(?!^)");
-        while(num)
-        {
-            for(int j = 0; j < stringArray.length; j++)
-            {
-                if(stringArray[j].matches("-?(0|[1-9]\\d*)"))
+        for(int j = 0; j < stringArray.length; j++)
+        {       // Returns true if element matches a number in the form of a String
+        	if(stringArray[j].matches("-?(0|[1-9]\\d*)"))
                 {
-                    num = false; 
+                    num = true; 
                 }
-            }
-            break;
         }
         return num;
     }
