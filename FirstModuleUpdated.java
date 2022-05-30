@@ -81,7 +81,6 @@ public class FirstModuleUpdated
     {
         String[] caseArray;
         StringBuilder stringBuild = new StringBuilder();
-        int stringLength = converted.length();
         caseArray = converted.split("(?!^)");
         for(int i = 0; i < caseArray.length; i++)
         {
