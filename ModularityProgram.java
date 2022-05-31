@@ -93,6 +93,7 @@ public class ModularityProgram
                 {
                     System.out.println("Please enter a String: ");
                     input = sc.nextLine();
+		    input = sc.nextLine();
                     System.out.println(categoryB(input));
                     System.out.println(""); // PRINT TO NEW LINE
                     continueMenu = false;
