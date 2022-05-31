@@ -9,7 +9,7 @@ import java.io.*;
 public class ModularityProgram
 {
     /**
-     * Constructor for objects of class Modularity
+     * Menu for ModularityProgram
      */
     public static void main(String[] args)
     {
@@ -176,10 +176,9 @@ public class ModularityProgram
             int total = 0;
             while ((line = reader.readLine()) != null) 
             {
-<<<<<<< HEAD
                 int num = Integer.parseInt(line);
                 total += num;
-=======
+
                 if(isNumberInString(line) == true)
                 {
                     int num = Integer.parseInt(line); 
@@ -189,7 +188,6 @@ public class ModularityProgram
                 {
                     total += 0;
                 }
->>>>>>> UpdateThirdModule
             }
             System.out.print("The total of " + fileName + " equals: " + total + ", has been successfully written to file, 'Total.txt'.");
             printTotal = Integer.toString(total);
