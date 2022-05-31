@@ -6,7 +6,7 @@ import java.io.*;
  * @Miguel Lima 2081096
  * @V1
  */
-public class ModularityProgram
+public class UpdateModularityProgram
 {
     /**
      * Constructor for objects of class Modularity
@@ -175,10 +175,6 @@ public class ModularityProgram
             int total = 0;
             while ((line = reader.readLine()) != null) 
             {
-<<<<<<< HEAD
-                int num = Integer.parseInt(line);
-                total += num;
-=======
                 if(isNumberInString(line) == true)
                 {
                     int num = Integer.parseInt(line); 
@@ -188,7 +184,6 @@ public class ModularityProgram
                 {
                     total += 0;
                 }
->>>>>>> UpdateThirdModule
             }
             System.out.print("The total of " + fileName + " equals: " + total + ", has been successfully written to file, 'Total.txt'.");
             printTotal = Integer.toString(total);
